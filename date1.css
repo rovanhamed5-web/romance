@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #ffdde1,
+        #ee9ca7,
+        #ffb6c1
+    );
+    overflow: hidden;
+}
+
+/* Main card */
+
+.card {
+    width: 90%;
+    max-width: 450px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 25px;
+    padding: 40px 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(180, 70, 100, 0.2);
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+
+.flower {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #b83b5e;
+    margin-bottom: 25px;
+}
+
+.question {
+    font-size: 23px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: static;
+    min-height: 60px;
+
+}
+
+button {
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#yesBtn {
+    background: #d94f70;
+    color: white;
+}
+
+#yesBtn:hover {
+    background: #b83256;
+    transform: scale(1.1);
+}
+
+#noBtn {
+    background: #eeeeee;
+    color: #555;
+    position: relative;
+    z-index: 5;
+}
+
+#successMessage {
+    margin-top: 25px;
+    color: #d94f70;
+    font-size: 22px;
+}
+
+/* Floating hearts */
+
+.heart {
+    position: absolute;
+    bottom: -30px;
+    animation: floatUp 7s linear infinite;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
