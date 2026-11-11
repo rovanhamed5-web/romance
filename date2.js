@@ -49,7 +49,7 @@ noBtn.addEventListener("touchstart", (event) => {
 yesBtn.addEventListener("click", () => {
 
     successMessage.innerHTML =
-        "5las ya taleen im sorry❤️🌹";
+        "YAYYYY! ❤️🌹 See you soon!";
 
     yesBtn.style.display = "none";
     noBtn.style.display = "none";
